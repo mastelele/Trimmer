@@ -30,6 +30,7 @@ const TrimmerFooter = ({ setTrackDUration }) => {
         id="file"
         className="inputfile"
         type="file"
+        accept="audio/*"
         onChange={onChange}
       ></input>
       <label htmlFor="file">Upload</label>
