@@ -37,3 +37,18 @@ body {
   border-radius: 18px;
   cursor: pointer;
 }
+
+.rc-slider-dot:nth-child(5n) {
+  height: 15px!important;
+}
+
+.rc-slider-tooltip {
+  background: #ffffff;
+  border: 1px solid #DDE3F0;
+}
+
+.rc-slider-tooltip-inner {
+  color:#545f7e!important;
+  background-color: #ffffff!important;
+  border-radius: 0!important;
+}
