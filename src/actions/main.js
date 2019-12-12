@@ -11,8 +11,8 @@ export function setTrackDurationAction(duration) {
     dispatch({
       type: SET_RANGE,
       data: {
-        start: Math.floor(start * ratio),
-        end: Math.floor(end * ratio),
+        start: +(ratio * start).toFixed(1),
+        end: +(end * ratio).toFixed(1),
       },
     })
   }

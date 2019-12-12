@@ -29,8 +29,8 @@ const TrimmerPanel = ({ duration, start, end, setRange }) => {
   }
 
   const tipFormatter = () => {
-    const startSeconds = start / 10
-    const endSeconds = end / 10
+    const startSeconds = start
+    const endSeconds = end
     const startMinutes = Math.floor(startSeconds / 60)
     const endMinutes = Math.floor(endSeconds / 60)
     return `${startMinutes}:${startSeconds % 60} - ${endMinutes}:${endSeconds}`
@@ -43,9 +43,10 @@ const TrimmerPanel = ({ duration, start, end, setRange }) => {
         dotStyle={dotStyle}
         tipFormatter={tipFormatter}
         min={0}
-        max={duration / 0.1}
+        max={duration}
         dots
         allowCross={false}
+        step={0.1}
         value={[start, end]}
         onChange={rangeOnChangeHandler}
       />
